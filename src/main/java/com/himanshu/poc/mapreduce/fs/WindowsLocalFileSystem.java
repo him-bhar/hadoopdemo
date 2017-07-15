@@ -1,6 +1,7 @@
-package com.himanshu.poc.mapreduce;
+package com.himanshu.poc.mapreduce.fs;
 
 
+import com.himanshu.poc.mapreduce.wordcount.WordCount;
 import org.apache.hadoop.fs.LocalFileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.fs.permission.FsPermission;
@@ -15,7 +16,7 @@ public class WindowsLocalFileSystem extends LocalFileSystem {
    * https://bigdatanerd.wordpress.com/2013/11/14/mapreduce-running-mapreduce-in-windows-file-system-debug-mapreduce-in-eclipse/
    *
    * Configuration conf = getConf();
-   * conf.set("fs.file.impl", "com.himanshu.poc.mapreduce.WindowsLocalFileSystem");
+   * conf.set("fs.file.impl", "com.himanshu.poc.mapreduce.fs.WindowsLocalFileSystem");
    * Job job = new Job(conf);
    * see @{@link WordCount}
    *

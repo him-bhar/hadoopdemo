@@ -1,5 +1,7 @@
-import com.himanshu.poc.mapreduce.WordCountMapper;
-import com.himanshu.poc.mapreduce.WordCountReducer;
+package com.himanshu.poc.mapreduce.wordcount;
+
+import com.himanshu.poc.mapreduce.wordcount.WordCountMapper;
+import com.himanshu.poc.mapreduce.wordcount.WordCountReducer;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;

@@ -1,4 +1,4 @@
-package com.himanshu.poc.mapreduce;
+package com.himanshu.poc.mapreduce.wordcount;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
@@ -26,7 +26,11 @@ public class WordCount extends Configured implements Tool {
     }
 
     Configuration conf = getConf();
-    conf.set("fs.file.impl", "com.himanshu.poc.mapreduce.WindowsLocalFileSystem");
+    conf.set("fs.file.impl", "com.himanshu.poc.mapreduce.fs.WindowsLocalFileSystem");
+
+    //some additional
+    conf.set("fs.default.name", "file:///");
+    conf.set("mapred.job.tracker", "local");
 
     Job job = new Job(conf);
     job.setJarByClass(WordCount.class);

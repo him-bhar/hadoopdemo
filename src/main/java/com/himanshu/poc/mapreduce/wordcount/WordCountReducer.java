@@ -1,4 +1,4 @@
-package com.himanshu.poc.mapreduce;
+package com.himanshu.poc.mapreduce.wordcount;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;

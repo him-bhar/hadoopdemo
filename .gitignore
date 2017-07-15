@@ -67,5 +67,6 @@ bower_components/*
 
 .idea/*
 output.txt/**
+final-output/**
 target/*
 *.iml
